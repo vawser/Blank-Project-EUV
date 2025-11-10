@@ -1,0 +1,11 @@
+﻿{
+	"name":	"Warcraft",
+	"id":	"warcraft.euv",
+	"version":	"1.0.0",
+	"supported_game_version":	"1.0.3",
+	"short_description":	"Warcraft",
+	"tags":	["Alternative history"],
+	"relationships":	[],
+	"game_custom_data":	{
+}
+}
