@@ -1,0 +1,22 @@
+﻿<artist work id> = {
+    captured = yes
+    # Can this work be captured.
+    
+    allow = {
+        <trigger>
+    }
+    # When to allow this work of art (root = character)
+    
+    location_modifier = {
+        <modifier>
+    }
+    # Modifiers to apply to the location of this work of art
+    
+    country_modifier = {
+        <modifier>
+    }
+    # Modifiers to apply to the country owner of this work of art
+    
+    religion_scale_modifier = <modifier name>
+    # Modifier applies to whole religion
+}
