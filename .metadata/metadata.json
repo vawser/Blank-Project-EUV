@@ -1,9 +1,9 @@
 ﻿{
-	"name":	"Warcraft",
-	"id":	"warcraft.euv",
+	"name":	"Blank Project",
+	"id":	"blank.project.euv",
 	"version":	"1.0.0",
-	"supported_game_version":	"1.0.3",
-	"short_description":	"Warcraft",
+	"supported_game_version":	"1.0.4",
+	"short_description":	"Blank",
 	"tags":	["Alternative history"],
 	"relationships":	[],
 	"game_custom_data":	{
