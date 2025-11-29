@@ -1,0 +1,10 @@
+# Entry:
+<entry> = {
+    <cost> = <value>
+}
+
+# Costs:
+favors
+spy_network
+
+

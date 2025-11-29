@@ -1,0 +1,22 @@
+﻿# Entry:
+<key> = {
+    color = <color>                 # The color on map
+    
+    level = <int>                   # The level this rank represents
+    ai_level = <int>                # Default = 1, values from 1 to 4, higher values are treated as 4, used to limit scope of interactable countries for diplomacy AI. 
+                                    # When adding new ranks between vanilla ranks set this value to the rough equivalent of your new rank in vanilla.
+                            
+    language_power_scale = <float>  # Multiplies amount of power a language gets from being the court language in a country with this rank
+    character_ai_cooldown = <float> # Default = 1, modifies how often character interactions are checked
+    diplomacy_ai_cooldown = <float> # Default = 1, modifies how often country interactions are checked
+
+    allow = {
+        <triggers>
+    }
+    # Whether this country allowed to change to this rank
+    
+    rank_modifier = {
+        <modifiers>
+    }
+    # The modifiers given to the country
+}

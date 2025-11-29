@@ -1,0 +1,40 @@
+﻿# Entry:
+<key> = {
+    image = <path>                              # The path to the icon to use for this disaster
+    
+    monthly_spawn_chance = <script value>       # Value for how likely the disease is to spawn per month (0..1) (scope:disaster is the disaster)
+    
+    map_mode = <map mode tag>                   # Optional: link to the map mode to show while looking at this disaster
+    fire_only_once = <bool>                     # Whether or not the disaster can occur multiple times to the same country
+    
+    modifier = {
+        <modifiers>
+    }
+    # The modifiers applied to a country that has this disaster ongoing
+    
+    can_start = {
+        <triggers>
+    }
+    # The trigger to see if the disaster can start (root = country, scope:disaster = disaster type)
+    
+    can_end = {
+        <triggers>
+    }
+    # The trigger to see if the disaster should end (root = country, scope:disaster = disaster type)
+    
+    on_start = {
+        <triggers>
+    }
+    # The effects fired when the disaster starts (root = country, scope:disaster = disaster type)
+    
+    on_monthly = {
+        <triggers>
+    }
+    # The effects fired each month that the disaster is ongoing (root = country, scope:disaster = disaster type)
+    
+    on_end = {
+        <triggers>
+    }
+    # The effects fired when the disaster ends (root = country, scope:disaster = disaster type)
+
+{

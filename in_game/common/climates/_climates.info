@@ -1,0 +1,25 @@
+# Entry:
+<key> = {
+    winter = <type>         # The winter this climate experiences.
+    color = <color>         # The color this climate is represented by.
+    
+    has_precipitation = no  # Optional. Whether it can rain in this climate.
+    always_winter = yes     # Optional. Whether it is always considered winter in this climate. For snowy mountain visuals mainly.
+    
+    location_modifier = {
+        <modifiers>
+    }
+    # The location modifiers to apply to a location with this climate.
+    
+    unit_modifier = {
+        <modifiers>
+    }
+    # The unit modifiers to apply to a unit within a location with this climate.
+    
+    audio_tags = {
+        <tag> = <float>     # The audio tag weighting
+    }
+    # The audio tags to associate with this climate.
+    
+    debug_color = rgb { <color> }   # The color to use for the climate_screenshot screenshot
+}

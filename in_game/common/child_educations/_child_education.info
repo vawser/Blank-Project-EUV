@@ -1,0 +1,20 @@
+﻿# Entry:
+<key> = {
+	modifier = { 
+        <character modifiers> 
+    }
+    # Character modifiers to apply with this education
+    
+	country_modifier = { 
+        <country modifiers> 
+    }
+    # Country modifiers to apply with this education
+    
+	price_to_select = <price>               # Price to use for this education when selecting it.
+	price_to_deselect = <price>             # Price to use for this education when deselecting it.
+    
+	allow = { 
+        <triggers>
+    }
+    # Whether to allow this education option (scoped to character).
+}

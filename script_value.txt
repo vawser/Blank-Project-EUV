@@ -1,0 +1,64 @@
+#-------------------------------------
+# Script Values
+#-------------------------------------
+Script values can be handles as such:
+
+value = <float>
+
+value = {
+    <min>   # The minimum value in this randomised value
+    <max>   # The maximum value in this randomised value
+}
+
+add = <value>
+add = {
+    desc = <key>            # The localization key for the description of this value.
+    value = <value>         # The direct value that is applied for this operation.
+    <operation> = <value>   # The operation to apply within this value.
+}
+
+subtract = <value>
+subtract = {
+    value = <value> 
+    <operation> = <value>
+}
+
+multiply = <value>
+multiply = {
+    value = <value> 
+    <operation> = <value>
+}
+
+Functionally, the operations can be nested, i.e, in a add scope, you can add a multiply scope, and within that, you can add a subtract scope.
+
+Example:
+add = {
+    value = 1.0
+    
+    multiply = {
+        value = "disease_presence(scope:disease)"
+        add = 1.0
+        multiply = 2.0
+        
+        subtract = {
+            value = 3.0
+            
+            multiply = 2.0
+        }
+    }
+}
+
+#-------------------------------------
+# Values
+#-------------------------------------
+Values can be constant integers or floats, or they can be wrapped results of a function, for example:
+
+    "distance_to_squared(scope:disease.origin)"
+
+Can be used as the right-hand side of a value definition to set that value to the result of the function.
+
+Like-wise, in triggers, these wrapped functions can be used:
+
+    "disease_presence(scope:disease)" > 0.05
+    
+The function resolves, and then checks against the constant value.

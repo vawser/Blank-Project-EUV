@@ -3,52 +3,7 @@
 
 	random_valid = yes
 
-	text = { #Yo ho!
-		localization_key = common_string_positive_pirate
-		trigger = { has_reform = government_reform:pirate_brethren_reform }
-	}
-
-	# Language Specific
-
-	text = { # Molt bé
-		localization_key = common_string_positive_catalan
-		trigger = { culture.dialect = dialect:catalan_dialect }
-	}
-
-	text = { # Très bien
-		localization_key = common_string_positive_french
-		trigger = { culture.language = language:french_language }
-	}
-
-	text = { # Molto bene
-		localization_key = common_string_positive_italian
-		trigger = { 
-			culture.language = language:north_italian_language
-			culture.language = language:south_italian_language
-		}
-	}
-
-	text = { # Sehr gut
-		localization_key = common_string_positive_german
-		trigger = {
-			culture.language = language:german_language
-			NOT = { culture.dialect = dialect:dutch_dialect }
-		}
-	}
-
-	text = { # Muy bien
-		localization_key = common_string_positive_spanish
-		trigger = { culture.language = language:spanish_language }
-	}
-
-	text = { # Mycket bra
-		localization_key = common_string_positive_swedish
-		trigger = { culture.dialect = dialect:swedish_dialect }
-	}
-
 	# Generics
-	
-
 	text = { localization_key = common_string_brilliant }
 	text = { localization_key = common_string_excellent }
 	text = { localization_key = common_string_excellent_news }
@@ -73,16 +28,6 @@ common_string_wonder = {
 
 	random_valid = yes
 
-	# Language Specific
-
-	text = { # Fantastisch
-		localization_key = common_string_wonder_german
-		trigger = {
-			culture.language = language:german_language
-			NOT = { culture.dialect = dialect:dutch_dialect }
-		}
-	}
-
 	# Generics
 	text = { localization_key = common_string_marvelous }
 	text = { localization_key = common_string_fantastic }
@@ -101,35 +46,6 @@ common_string_ok = { # [ROOT.GetCountry.Custom('common_string_ok')]
 
 	random_valid = yes
 
-	# Language Specific
-
-	text = { # D'acord 
-		localization_key = common_string_ok_catalan
-		trigger = { culture.dialect = dialect:catalan_dialect }
-	}
-
-	text = { # Va bene
-		localization_key = common_string_ok_italian
-		trigger = { 
-			culture.language = language:north_italian_language
-			culture.language = language:south_italian_language
-		}
-	}
-
-	text = { # Vale
-		localization_key = common_string_ok_spanish
-		trigger = { culture.language = language:spanish_language }
-	}
-
-	text = { # D'accord
-		localization_key = common_string_ok_french
-		trigger = { culture.language = language:french_language }
-	}
-	text = { # Bien
-		localization_key = common_string_ok_french_2
-		trigger = { culture.language = language:french_language }
-	}
-
 	# Generics
 	text = { localization_key = common_string_alright }
 
@@ -145,36 +61,6 @@ common_string_negative = { # [ROOT.GetCountry.Custom('common_string_negative')]
 	type = country
 
 	random_valid = yes
-
-	text = { #Yarr!
-		localization_key = common_string_negative_pirate
-		trigger = { has_reform = government_reform:pirate_brethren_reform }
-	}
-
-	# Language Specific
-
-	text = { # Verdammt
-		localization_key = common_string_negative_german
-		trigger = {
-			culture.language = language:german_language
-			NOT = { culture.dialect = dialect:dutch_dialect }
-		}
-	}
-
-	text = { # Verflucht
-		localization_key = common_string_negative_german_2
-		trigger = {
-			culture.language = language:german_language
-			NOT = { culture.dialect = dialect:dutch_dialect }
-		}
-	}
-
-	text = { # Quelle tragédie
-		localization_key = common_string_negative_french
-		trigger = { 
-			culture.language = language:french_language
-		}
-	}
 
 	# Generics
 
@@ -194,8 +80,6 @@ common_string_disappointing = { # [ROOT.GetCountry.Custom('common_string_disappo
 	type = country
 
 	random_valid = yes
-
-	# Language Specific
 
 	# Generics
 
@@ -218,8 +102,6 @@ common_string_nothing_we_can_do = { # [ROOT.GetCountry.Custom('common_string_not
 
 	random_valid = yes
 
-	# Language Specific
-
 	# Generics
 
 	text = { localization_key = common_string_nothing_we_can_do_about_it }
@@ -238,8 +120,6 @@ common_string_we_must_do_something = { # [ROOT.GetCountry.Custom('common_string_
 
 	random_valid = yes
 
-	# Language Specific
-
 	# Generics
 	text = { localization_key = common_string_we_must_do_something_about_it }
 	text = { localization_key = common_string_we_must_do_something_about_this }
@@ -255,24 +135,6 @@ common_string_suprised = { # [ROOT.GetCountry.Custom('common_string_suprised')]
 	type = country
 
 	random_valid = yes
-
-	# Language Specific
-
-	text = { #Alter Schwede
-		localization_key = common_string_suprised_german
-		trigger = { 
-			culture.language = language:german_language
-			NOT = { culture.dialect = dialect:dutch_dialect }
-		}
-	}
-
-	text = { #Mein lieber Schwan
-		localization_key = common_string_suprised_german_2
-		trigger = { 
-			culture.language = language:german_language
-			NOT = { culture.dialect = dialect:dutch_dialect }
-		}
-	}
 
 	# Fallback
 	text = {

@@ -1,0 +1,34 @@
+﻿blank_culture = {
+	language = blank_dialect
+	
+	color = map_debug
+	
+	tags = { european_gfx }
+
+	country_modifier = {
+    
+	}
+    
+	character_modifier = {
+    
+	}
+    
+	location_modifier = {
+	}
+
+	opinions = {
+        
+	}
+
+	culture_groups = {
+		blank_culture_group
+	}
+	
+	noun_keys = {
+        
+	}
+	
+	adjective_keys = {
+        
+	}
+}

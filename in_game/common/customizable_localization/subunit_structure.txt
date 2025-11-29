@@ -2,61 +2,6 @@
 	type = sub_unit
 	
 	text = {
-		localization_key = subunit_structure_army_roman
-		trigger = {
-			culture.language = language:latin_language
-		}
-	}
-	
-	text = {
-		localization_key = subunit_structure_army_spanish
-		trigger = {
-			OR = {
-				culture.language = language:spanish_language
-				culture.dialect = dialect:catalan_dialect
-			}
-		}
-	}
-	
-	text = {
-		localization_key = subunit_structure_army_german
-		trigger = {
-			culture.language = language:german_language
-		}
-	}
-	
-	text = {
-		localization_key = subunit_structure_army_italian
-		trigger = {
-			OR = {
-				culture.language = language:north_italian_language
-				culture.language = language:south_italian_language
-			}
-		}
-	}
-	
-	text = {
-		localization_key = subunit_structure_army_arabic
-		trigger = {
-			culture.language = language:arabic_language
-		}
-	}
-	
-	text = {
-		localization_key = subunit_structure_army_english
-		trigger = {
-			culture.language = language:english_language
-		}
-	}
-	
-	text = {
-		localization_key = subunit_structure_army_welsh
-		trigger = {
-			culture.language = language:brythonic_language # welsh
-		}
-	}
-
-	text = {
 		localization_key = subunit_structure_army
 		fallback = yes
 	}

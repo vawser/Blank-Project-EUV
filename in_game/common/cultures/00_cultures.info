@@ -1,27 +1,36 @@
-﻿my_culture = {
-	language = my_language # language or dialect
+﻿# Entry:
+<key> = {
+	language = <key>        # language or dialect
 	
-	color = map_ENG # jomini color
+	color = <key>           # jomini color
 	
-	tags = { catalan_gfx swedish_gfx european_gfx } # gfx tags 
+	tags = { 
+        <tag>
+    } 
+    # gfx tags 
 
 	country_modifier = {
-		# modifier when country's Primary Culture is this
+		<modifiers>
 	}
+    # Modifiers when country's Primary Culture is this
+    
 	location_modifier = {
-		# modifier when location's Dominant Culture is this
+		<modifiers>
 	}
+    # Modifiers when location's Dominant Culture is this
+    
 	character_modifier = {
-		# modifier when character's culture is this
+		<modifiers>
 	}
+    # Modifiers when character's culture is this
 
 	opinions = {
-		danish_gfx = enemy # enemy, negative, neutral, positive, kindred
+        <gfx_tag/culture> = <attitude>      # enemy, negative, neutral, positive, kindred
 	}
+    # Attitudes towards other cultures
 
 	culture_groups = {
-		# add as many as you like. convention is to put the more unique ones first and less unique ones last 
-		polish_group
-		slavic_group
+        <culture_group>
 	}
+    # The culture groups this culture belongs to
 }

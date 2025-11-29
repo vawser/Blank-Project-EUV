@@ -1,11 +1,17 @@
-﻿culture_group = {
+﻿# Entry:
+culture_group = {
 	country_modifier = {
-		# modifier when Primary Culture is a culture with this culture group
+        <modifiers>
 	}
+    # Applied to country with a primary culture within this culture group
+    
 	location_modifier = {
-		# modifier when Dominant Culture is a culture with this culture group
+        <modifiers>
 	}
+    # Applied to location with a dominant culture within this culture group
+    
 	character_modifier = {
-		# modifier when Culture is a culture with this culture group
+        <modifiers>
 	}
+    # Applied to character with a culture within this culture group
 }

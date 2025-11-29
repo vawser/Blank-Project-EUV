@@ -1,0 +1,17 @@
+﻿# Entry:
+<key> = {
+    country_modifier = {
+        <modifiers>
+    }
+    # Modifiers the country gets when using this system
+    
+    priority = {
+        <script_value>
+    }
+    # Script value to return the building priority (higher numbers gets done first, so priority 10 then priority 2 then priority 1 etc)
+    
+    ai_will_do = {
+        <script_value>
+    }
+    # Script value for how the ai willchoose which system to use
+}

@@ -1,10 +1,23 @@
-﻿# Entry:
+﻿#------------------
+# Entry
+#------------------
 <key> = {
-    message = <bool>                # Whether or not to show a message about this interaction
-    sound = <key>                   # Sound to use for the action
-    on_other_nation = <bool>        # Whether you can use this on characters from another nation (default = no)
-    on_own_nation = <bool>          # Whether you can use this on characters from your nation (default = no)
-    is_consort_action = <bool>      # Whether this is an interaction on your consort
+    type = <type>               # Can be subject/diplomacy
+    sound = <key>               # Sound to use for the action
+    
+    accept = <script_value>     # Value for acceptance for AI.
+    
+    diplo_chance = {
+        base = <value>
+        
+        <chance> = <value>
+    } 
+    # Overrides of default acceptance values. See the AI Diplo Chance Types list.
+    
+    block_when_at_war = <bool>  # Whether this action is blocked when at war.
+    use_enroute = <bool>        # Whether to use diplomats that take time or not
+    
+    diplomatic_cost = <key>     # If spy network/trust/favor cost is required
     
     potential = {
         <triggers>
@@ -21,6 +34,8 @@
     payer = <scope>                 # Script to determine who is paying the price. By default, the actor
     payee = <scope>                 # Script to determine who gets paid. By default, nobody, the price disappears into the ether
     
+    ai_limit_per_check = <int>      # Limit the amount of countries Ai will use this on per month
+
     ai_tick = <type>                        # Use to ban the AI from using an action that is already handled in code OR to indicate how often to process. Can be never/daily/monthly
     ai_tick_frequency = <scripted value>    # How many ticks until next. script to determine how often this action should be checked for each country. root is the country. 
                                             # This is just a per-country check. So ai_tick = monthly and ai_tick_frequency = 6 means "check every 6 months"
@@ -39,14 +54,19 @@
     effect = {
         <effects>
     }
-    # The effects to apply when the interaction is executed. scope:actor is the country, scope:recipient, scope:target, scope:target_1, scope:target_2....etc
+    # The effects to apply when the action is executed. scope:actor is the country, scope:recipient, scope:target, scope:target_1, scope:target_2....etc
+    
+    reject_effect = {
+        <effects>
+    }
+    # The effects to apply when the action is rejected. scope:actor is the country, scope:recipient, scope:target, scope:target_1, scope:target_2....etc
     
     cooldown = { 
         type = <any tag> 
         days/weeks/months/years = <integer> 
     } 
     # Adds a cooldown for the action during which time it cannot be performed again
-
+    
     # Can add multiple of these to allow selection of targets/parameters for the action. They get stored in scope:target, scope:target_1, scope:target_2....etc
     select_trigger = {
         looking_for_a = <type>              # Can be character/location/province/area/region/country/value/boolean
@@ -153,3 +173,177 @@
         
     }
 }
+
+#------------------
+# GUI
+#------------------
+A GUI widget to use these exists. Here's an example:
+
+action_button_default = {
+    size = { 115 30 }
+    text = "Test"
+    title = "OFFERMILACCTITLE"
+    description = "OFFERMILACCDESC"
+    actor = "[ForeignCountryView.GetPlayer]"
+    recipient = "[ForeignCountryView.GetCountry]"
+    left_action = {
+		action_name = "invite_to_international_organization"
+    	action_direction = "offer" (request, offer, cancellation, break)
+		parameter = {
+			parameter_name = international_organization_type
+			parameter_value = "[GetInternationalOrganizationType('defensive_league')]"
+		}
+	  }
+    left_click_and_hold_action = {
+		action_name = "scripted_relation"
+		parameter = {
+			parameter_name = scripted_relation_type
+			parameter_value = "[GetScriptedRelationType('alliance')]"
+		}
+    	action_direction = "cancellation"
+	  }
+    right_action = {
+		action_name = "subject_diplomacy_action"
+    	action_direction = "break"
+		parameter = {
+			parameter_name = target
+			parameter_value = "[ForeignCountryView.GetCountry.GetDiplomacy.GetSubjectType]"
+		}
+	  }
+	  right_click_and_hold_action = { action_name = "create_market" }
+}
+
+#------------------
+# AI Diplo Chance Types
+#------------------
+at_war
+recipient_at_war
+actor_at_war
+recipient_civil_war
+actor_civil_war
+multiple_offensive_wars
+actor_is_rival
+recipient_is_rival
+same_religion
+different_religion
+same_culture
+same_court_language
+same_common_language
+different_culture
+diplomatic_reputation
+culture_war
+opinion
+warscore
+peaceoffer
+peaceoffer_most_of_wanted
+months_at_war
+planning_demise
+conflicting_interests
+max_relations
+actor_max_relations
+capital_distance
+yesman
+defeat
+victory
+has_border
+same_international_organization
+giving_defensive_support
+receiving_defensive_support
+base
+giving_them_access
+in_debt
+cost
+claim
+current_strength
+potential_strength
+relative_strength
+capital
+location_value
+base_location_value
+interesting
+vital
+avoided
+stability
+positive_stability
+negative_stability
+war_exhaustion
+low_manpower
+disloyal_subject
+no_action
+separate_peace
+junior_to
+price
+desperation
+war_balance
+war_goal
+making_gains
+on_retreat
+tutorial
+target_opinion
+lacks_border
+another_war
+fighting_together
+border_distance
+province_distance
+revolter
+rank
+rank_difference
+common_threat
+competing_power
+recipient_at_peace
+actor_at_peace
+best_possible_offer
+substantial_land_lost
+last_major_battle
+few_relations
+no_access
+positive_opinion
+negative_opinion
+allied_to_enemy
+enforced_demand
+ai_setting
+has_truce
+has_truce_with_target
+overlord
+my_proposal
+heir
+interest_rate_too_high
+good_interest_rate
+existing_loans_from_country
+too_many_loans
+need_loan
+loan_is_insignificant
+loan_ends_too_soon
+loan_ends_too_late
+using_favors
+unbalanced_favors
+trust_in_actor
+trust_in_recipient
+not_1_trust
+not_5_trust
+not_10_trust
+not_15_trust
+not_20_trust
+same_government_type
+different_government_type
+estates_like
+estates_dislike
+culture_view
+religion_view
+royal_ties
+call_for_peace
+war_enthusiam
+want_more
+want_something_else
+tax_base
+promised_land
+demands_made
+belongs_to_international_organization
+different_religion_group
+conquer_desire
+produced_goods
+price_percentage_of_treasury_funds
+betrayed_ally
+too_much_antagonism
+antagonism
+strategic_interest

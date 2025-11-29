@@ -1,0 +1,21 @@
+# Entry:
+<key> = {
+    random = yes                    # Whether this death can happen randomly
+    
+    trigger = {
+        <triggers>
+    }
+    # The triggers for this death to occur
+    
+    weight = {
+		value = <trigger>
+        
+        # Can be used as a mathematical sense: adjusts the weight
+        add = <value>
+		subtract = <value>
+		multiply = <value>
+    }
+
+    possible_parameter = <type>     # killer, location, disease_outbreak
+                                    # Can have multiple
+}
