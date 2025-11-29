@@ -1,0 +1,110 @@
+# Building entry
+<key> = {
+    <location rank> = <bool>                    # Location ranks that the building can be built in
+    
+    pop_type = <pop type>                       # The pop type employed in this building
+    is_foreign = <bool>                         # Is the building type able to be built in foreign lands
+
+    build_time = <integer>                      # Building time in days
+    employment_size = <float>                   # How many people can be employed there. 1 = 1000 people
+    output = <float>                            # How much of the produced good can be output per building level
+    
+    in_empty = <empty/owned/any>                # empty = can build in non-owned locations only; owned = can build in owned locations only; any = can build anywhere
+    stronger_power_projection = <bool>          # If yes, and you're building it in a foreign-owned location, you need stronger power projection than the location's owner to build it
+    need_good_relation = <bool>                 # If yes, and you're building it in a foreign-owned location, you need good relations with the location's owner to build it
+    conversion_religion = <religion>            # Religion that pops are converted to by this building
+
+    category = <building category>              # Building category tag
+    construction_demand = <key>                 # What goods are required during construction
+    
+    obsolete = <building type>                  # What building type this one makes obsolete
+    price = <price>                             # Price of creating the building
+    destroy_price = <price>                     # Price to destroy the building
+    estate = <estate type>                      # What estate can build the building
+    max_levels = <scripted integer>             # Maximum levels the building can be upgraded to (root = location, scope:owner = building owner, scope:builder = who's paying)
+    pop_size_created = <float>                  # Creates a pop of this size for the new building, taking it from your capital (for foreign buildings only)
+    increase_per_level_cost = <per cent>        # Each new level added increases the cost by this percentage. So 0.5 = 50% more expensive per extra level
+    always_add_demands = <bool>                 # When set to yes building will need full demand even if doesn't employ all workers
+    
+    AI_ignore_available_worker_flag = <bool>    # AI will build this building even if it is lacking the required pop type
+    important_for_AI = <bool>                   # When set it makes the AI use more performance trying to find a suitable place to build this
+    
+    allow = {
+        <triggers>
+    }
+    # Can the building be built in the location (root = location) (think of this as an "enabled" check)
+    
+    location_potential = {
+        <triggers>
+    }
+    # Can the building be built in the location (root = location) (think of this as a "visible" check)
+    
+    country_potential = {
+        <triggers>
+    }
+    # Can the building be built by the country (root = country) (think of this as a "visible" check)
+    
+    can_destroy = {
+        <triggers>
+    }
+    # Can the building be destroyed in the location (root = location, actor = destroyer, building = building)
+    
+    remove_if = {
+        <triggers>
+    }
+    # Will the building be auto-destroyed in the location (root = building)
+    
+    capital_modifier = {
+        <modifiers> 
+    }
+    # Modifier applied to the location if built in the capital (multiplied by building level and goods access)
+    
+    capital_country_modifier = {
+        <modifiers> 
+    }
+    # Modifier applied to the country if built in the capital (multiplied by building level and goods access)
+    
+    modifier = {
+        <modifiers> 
+    }
+    # Modifier applied to the location (multiplied by building level and goods access)
+    
+    raw_modifier = {
+        <modifiers> 
+    }
+    # Modifier applied to the location (not scaled)
+    
+    market_center_modifier = {
+        <modifiers> 
+    }
+    # Modifier applied to the location if built in a market center (multiplied by building level and goods access)
+    
+    possible_production_methods = { 
+        <production_method>
+    }
+    # Production methods for each slot. (add as many lists as you desire)
+    
+    unique_production_methods = { 
+        x_requirements = { 
+            <good> = <float> # The good this unique method consumes
+			category = <key> # Category this unique method belongs to.
+        }
+    }
+    # Defines unique production methods scripted directly into the building
+    
+    on_built = { 
+        <effects> 
+    }
+    # Effects to apply when construction is complete.
+    
+    on_destroyed = { 
+        <effects> 
+    }
+    # Effects to apply when building is destroyed.
+    
+    custom_tags = { 
+        <strings> 
+    } 
+    # A list of custom strings to use to identify that building type
+
+}

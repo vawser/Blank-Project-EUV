@@ -1,0 +1,8 @@
+# Bias entry
+<key> = {
+    value = <value>             # The bias value that is applied.
+	max =  <value>              # The maximum bias value that can be applied if this bias is applied multiple times.
+	min = <value>               # The minimum bias value that can be applied if this bias is applied multiple times.
+	months = <value>            # The duration after which this bias is removed.
+    yearly_decay = <value>      # The amount of bias that is removed each year (negative will cause it to be added).
+}
