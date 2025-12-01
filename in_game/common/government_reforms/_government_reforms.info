@@ -1,0 +1,69 @@
+﻿#------------------
+# Overview
+#------------------
+
+#------------------
+# Entry
+#------------------
+<key> = {
+	major = yes                     # Is this a major reform? a country cannot select another major reform if they already have a major reform. default = no
+	age = <key>                     # Which age is this available from?
+
+	government = <type>             # Which government is allowed to use this
+                                    # Can be: monarchy, republic, theocracy, steppe_horde
+
+	potential = {
+        <triggers>
+	}
+    # What triggers must be true for this to even be visible in the UI. root = country
+
+	allow = {
+		<triggers>
+	}	
+    # What triggers must be true for this to even be selectable. root = country
+	
+	locked = {
+		<triggers>
+	}
+	# When these triggers are true, the reform cannot be manually removed by the country. root = country
+    
+	country_modifier = {
+        potential_trigger = {
+            <triggers>
+        }
+        # Optional: triggers for when this modifier is applied
+        
+        scale = <value> # Scale of the modifier
+    
+        <modifiers>
+    }
+    # Applied to the country that this reform is enacted in.
+    
+    location_modifier = {
+        potential_trigger = {
+            <triggers>
+        }
+        # Optional: triggers for when this modifier is applied
+        
+        scale = <value> # Scale of the modifier
+    
+        <modifiers>
+    }
+    # Applied to the locations that belong to the country this reform is enacted in.
+	
+	male_regnal_names = {
+		<string>
+	}
+    # New male rulers will randomly select one of these names to use
+	
+	female_regnal_names = {
+		<string>
+	}
+    # New female rulers will randomly select one of these names to use
+
+	years = <value>     # Same as below.
+    months = <value>    # Same as below.
+    weeks = <value>     # Same as below.
+    days = <value>      # Used to define how long it takes to become fully implemented. Use none for instant enactment.
+    
+}

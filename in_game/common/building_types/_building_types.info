@@ -1,4 +1,6 @@
-# Building entry
+#------------------
+# Entry
+#------------------
 <key> = {
     <location rank> = <bool>                    # Location ranks that the building can be built in
     

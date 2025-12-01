@@ -1,0 +1,55 @@
+#------------------
+# Entry
+#------------------
+<key> = {
+	level = <int>                               # What level is this country? Players can only form countries of equal or higher level. AI can only form of higher level.
+	required_locations_fraction = <float> 	    # What percentage of locations do you require to be able to form this country? Default = 1.0 (100%)
+	capital_required = <bool>                   # Must the list of required locations/regions etc contain your current capital for the formable to even be visible? default is yes
+	rule = <type>                               # Limits sillier ones vs historical ones. Select how silly you want it in the game rules. Default is historical
+                                                # Can be: historical/plausible/fantasy
+	potential = {
+		<triggers>
+	}
+    # Whether this formable is visible. Root is country scope.
+	
+	allow = {
+		<triggers>
+	}
+    # Whether this formable can be enacted. Root is country scope.
+
+	form_effect = {
+        <effect>
+	}
+    # The effects to apply upon enacting the formable. Root is country scope.
+    
+	name = <key>            # The name key (i.e. EXA)
+	flag = <key>            # The flag key (i.e. EXA)
+	adjective = <key>       # The adjective key (i.e. EXA_adj)
+	tag = <key>             # The tag key (i.e. EXA)
+	color = <color>         # The defined map color that you change to. If this is not set, you keep your old country's map color.
+	
+	continents = {
+		<continent keys>
+	}
+    # The continents required for this formable.
+    
+	sub_continents = {
+		<sub_continent keys>
+	}
+    # The sub-continents required for this formable.
+    
+	regions = {
+		<region keys>
+	}
+    # The regions required for this formable.
+    
+	areas = {
+		<area keys>
+	}
+    # The areas required for this formable.
+    
+	locations = {
+		<location keys>
+	}
+    # The locations required for this formable.
+}

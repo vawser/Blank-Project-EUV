@@ -1,4 +1,6 @@
-# Entry:
+#------------------
+# Entry
+#------------------
 <key> = {
     winter = <type>         # The winter this climate experiences.
     color = <color>         # The color this climate is represented by.

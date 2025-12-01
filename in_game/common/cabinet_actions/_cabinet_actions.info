@@ -1,4 +1,6 @@
-# Entry:
+#------------------
+# Entry
+#------------------
 <action> = {
     ability = <adm/dip/mil>         # Monarch ability that this action will use (adm/dip/mil)
     

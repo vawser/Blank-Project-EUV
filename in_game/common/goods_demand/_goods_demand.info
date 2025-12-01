@@ -1,0 +1,31 @@
+#------------------
+# Overview
+#------------------
+Setups the goods costs of various actions, units, etc.
+
+Buildings:
+A building has a construction_demand defined, which links to an entry here. Additionally, a building may have a entry in the possible_production_methods scope that links to an entry here too.
+
+Units:
+A unit has a maintenance_demand and construction_demand defined, which links to an entry here.
+
+Special Construction:
+A hardcoded action, such as remove_government_reform, has a goods demand of the same name here.
+
+#------------------
+# Entry
+#------------------
+<key< = {
+    <goods> = <float>   # The goods amount for this demand. Can have multiple.
+    
+    <goods> = {
+        <value> = <float>
+        
+        <effects>
+    }
+    # The goods scope can be accessed and more granular handling of the amount can be configured.
+    
+    category = <type>   # The category of this demand. From common/goods_demand_category/
+    
+    hidden = yes>       # Whether this demand is hidden from the interface.
+}

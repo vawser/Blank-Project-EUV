@@ -1,0 +1,20 @@
+#------------------
+# Entry
+#------------------
+<key> = {
+	age = <key>             # The age this institution is associated with.
+    
+	can_spawn = { 
+        <triggers> 
+    }	
+    # The conditions in which to spawn this institution. root = location scope
+    
+	promote_chance = <scripted value>                               # The chance of promotion
+	spread_from_friendly_coast_border_location = <scripted value>   # The spread from a friendly coastal border location
+	spread_from_any_coast_border_location = <scripted value>        # The spread from a coastal border location
+	spread_from_any_import = <scripted value>                       # The chance of spread from an import
+	spread_scale_on_control_if_owner_embraced = <scripted value>    # The spread modifier if the owner of the location has already embraced the institution
+	spread_embraced_to_capital = <scripted value>                   # The spread if embraced in the capital
+	spread_to_market_member = <scripted value>                      # The spread to a member of the same market as the owner of a location with this institution
+	spread = <scripted value>	                                    # The base spread speed
+}

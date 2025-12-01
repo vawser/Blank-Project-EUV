@@ -1,7 +1,11 @@
-﻿Genes connect to the /ethnicities
+﻿#------------------
+# Overview
+#------------------
+Genes connect to the /ethnicities
 
-=== Structure (very incomplete) ===
-
+#------------------
+# Entry
+#------------------
 color_genes = {
 	hair_color = {
 		index = 0					# index within the DNA

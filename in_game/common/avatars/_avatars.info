@@ -1,9 +1,11 @@
-﻿# Avatars! The different forms or manifestations a god can take, and they receive different names. For example, Rama and Krishna are both avatars of Vishnu
+﻿#------------------
+# Overview
+#------------------
+Avatars! The different forms or manifestations a god can take, and they receive different names. For example, Rama and Krishna are both avatars of Vishnu
 
-# Use the following to add avatars to a country
-# add_avatar = <avatar id>
-# remove_avatar = <avatar id>
-
+#------------------
+# Entry
+#------------------
 <key> = {
     god = <god key>     # God that this avatar is a manifestation of
     
@@ -74,3 +76,10 @@
     # Applied to the location the avatar is in.
     
 }
+
+#------------------
+# Effects
+#------------------
+Use the following to add avatars to a country
+ add_avatar = <avatar id>
+ remove_avatar = <avatar id>

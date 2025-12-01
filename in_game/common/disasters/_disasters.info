@@ -1,4 +1,6 @@
-﻿# Entry:
+﻿#------------------
+# Entry
+#------------------
 <key> = {
     image = <path>                              # The path to the icon to use for this disaster
     

@@ -1,13 +1,19 @@
 ﻿#------------------
 # Overview
 #------------------
-A set of privileges that can be implemented for any of your estates.
+Gods! Deities that may or may not affect gameplay.
 
 #------------------
 # Entry
 #------------------
 <key> = {
-	estate = <estate type tag>               # The estate the privilege applies to
+	religion = <key>    # The religion the god belongs to. Used if the religion name is that same as the god
+    
+    group = {
+        group = <religion_group>    # The religion group to use this god for
+        name_key = <key>            # The localization of the god's name
+    }
+    # A group definition for this god.
     
 	years = <value>     # Same as below.
     months = <value>    # Same as below.
@@ -49,7 +55,7 @@ A set of privileges that can be implemented for any of your estates.
     
         <modifiers>
     }
-    # Applied to the whole country that the privilege is in.
+    # Applied to the whole country that the avatar is in.
     
     province_modifier = {
         potential_trigger = {
@@ -61,7 +67,7 @@ A set of privileges that can be implemented for any of your estates.
     
         <modifiers>
     }
-    # Applied to the province the privilege is in.
+    # Applied to the province the avatar is in.
     
     location_modifier = {
         potential_trigger = {
@@ -73,5 +79,12 @@ A set of privileges that can be implemented for any of your estates.
     
         <modifiers>
     }
-    # Applied to the location the privilege is in.
+    # Applied to the location the avatar is in.
 }
+
+#------------------
+# Effects
+#------------------
+Use the following to add gods to a country
+    add_god = <god id>
+    remove_god = <god id>

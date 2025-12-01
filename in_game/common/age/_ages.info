@@ -1,27 +1,23 @@
-<age id> = {
-    year = <int>
-	# The start year for this Age
+#------------------
+# Overview
+#------------------
+Represents an Age that occurs during the time period.
+
+#------------------
+# Entry
+#------------------
+<key> = {
+    year = <int>                # The start year for this Age
+    price_stability = <float>   # ?
+    max_price = <int>           # ?
+	efficiency = <float>        # ?
+    
+	victory_card = <int>        # Sets the current Victory card count during this Age
+    
+	mercenaries = <float>               # Adjusts the size of mercenaries during this Age
+	war_score_from_battles = <float>    # Adjusts the warscore from battles during this Age
 	
-    price_stability = <float>
-    # ?
-	
-    max_price = <int>
-    # ?
-    
-	efficiency = <float>
-    # ?
-    
-	victory_card = <int>
-    # Sets the current Victory card count during this Age
-    
-	# mercenaries = <float>
-    # Adjusts the size of mercenaries during this Age
-    
-	war_score_from_battles = <float>
-    # Adjusts the warscore from battles during this Age
-	
-	hegemons_allowed = yes
-    # Whether Hegemons are allowed during this Age
+	hegemons_allowed = yes              # Whether Hegemons are allowed during this Age
     
 	modifier = {
 		<modifier>

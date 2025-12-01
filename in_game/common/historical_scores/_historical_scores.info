@@ -1,0 +1,7 @@
+#------------------
+# Entry
+#------------------
+<key> = {
+    tag = <tag>         # The tag to target
+    score = <value>     # The score to assign
+}

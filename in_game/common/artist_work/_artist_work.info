@@ -1,6 +1,8 @@
-﻿<artist work id> = {
-    captured = yes
-    # Can this work be captured.
+﻿#------------------
+# Entry
+#------------------
+<key> = {
+    captured = yes          # Can this work be captured.
     
     allow = {
         <trigger>
@@ -17,6 +19,5 @@
     }
     # Modifiers to apply to the country owner of this work of art
     
-    religion_scale_modifier = <modifier name>
-    # Modifier applies to whole religion
+    religion_scale_modifier = <modifier name>   # Modifier applies to whole religion
 }

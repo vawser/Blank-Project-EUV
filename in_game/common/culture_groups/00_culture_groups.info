@@ -1,4 +1,6 @@
-﻿# Entry:
+﻿#------------------
+# Entry
+#------------------
 culture_group = {
 	country_modifier = {
         <modifiers>

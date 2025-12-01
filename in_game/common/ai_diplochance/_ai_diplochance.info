@@ -1,4 +1,7 @@
-﻿The following scope types can be defined as the "type" in a "type = X" argument.
+﻿#------------------
+# Overview
+#------------------
+The following scope types can be defined as the "type" in a "type = X" argument.
 It should match whatever scope you use the custom loc command in.
 
 artifact
@@ -16,7 +19,9 @@ dynasty
 
 empty <- Not supported right now. Might be added as a "wildcard" in the future, accepting all scope types
 
-== format ==
+#------------------
+# Entry
+#------------------
 key = {
 	type = scope
 

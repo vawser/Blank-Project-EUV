@@ -1,0 +1,39 @@
+#------------------
+# Entry
+#------------------
+<key> = {
+	base_production = <float>							    # The base production of this good. Defaults to 0
+	color = <color>										    # The color the goods have in the Goods map modes
+	food = <float>										    # How much food this good provides with. Defaults to 0
+	transport_cost = <float>							    # How expensive it is to transport the good. Defaults to 1
+	default_market_price = <float>						    # The default price of the good on a market. Defaults to 1
+    
+	category = <type>					                    # Defines if the goods is a raw_material or not. Defaults to raw_material
+                                                            # Can be: raw_material/produced
+                                                            
+	method = <type>	                                        # Defines the extraction method for the good. Defaults to farming
+                                                            # Can be: mining/farming/hunting/gathering/forestry
+                                                            
+    ai_rgo_size_importance = <float>                        # AI preference to avoid building a city on this rgo
+    
+	is_slaves = <bool>									    # Mark good as a slave good. Defaults to no
+	block_rgo_upgrade = <bool>							    # Blocks the expansion of the rgo for this good. Defaults to no
+	inflation = <bool>									    # Good will cause inflation when produced.  Defaults to no
+    
+    demand_add = {
+		all = <float>
+        <pop types> = <float>
+	}
+    # Set the base demand
+    
+	demand_multiply = {
+		upper = <float>
+        <pop types> = <float>
+	}
+    # Adjust the demand based on pop type or add an upper check
+    
+    custom_tags = { 
+        <strings> 
+    }							
+    # A list of custom strings to use to identify that good
+}

@@ -1,4 +1,6 @@
-﻿# Entry:
+﻿#------------------
+# Entry
+#------------------
 <key> = {
 	no_cb = <bool>                  # Only for the no cb cb (the best cb)
 	trade = <bool>                  # If it's a trade-related cb
@@ -50,7 +52,9 @@
     antagonism_reduction_per_warworth_defender = <script value>     # root = country; scope:recipient = recipient; scope:war = war;
 }
 
-# Localization:
+#------------------
+# Localization
+#------------------
 <key>
 <key>_PROV
 <key>_desc

@@ -1,0 +1,40 @@
+#------------------
+# Entry
+#------------------
+<key> = {
+    country_modifier = {
+        potential_trigger = {
+            <triggers>
+        }
+        # Optional: triggers for when this modifier is applied
+        
+        scale = <value> # Scale of the modifier
+    
+        <modifiers>
+    }
+    # Applied to the country that owns the site.
+    
+    religion_modifier = {
+        potential_trigger = {
+            <triggers>
+        }
+        # Optional: triggers for when this modifier is applied
+        
+        scale = <value> # Scale of the modifier
+    
+        <modifiers>
+    }
+    # Modifier applied to the religion that controls the holy site if the holy site is considered important to that religion. 50% if the location's dominant religion is this religion; 50% if the owner's religion is this religion.
+    
+    location_modifier = {
+        potential_trigger = {
+            <triggers>
+        }
+        # Optional: triggers for when this modifier is applied
+        
+        scale = <value> # Scale of the modifier
+    
+        <modifiers>
+    }
+    # Applied to the location if the dominant_religion is the same as its religion. Scaled by importance.
+}

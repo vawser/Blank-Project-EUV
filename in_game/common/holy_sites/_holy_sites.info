@@ -1,0 +1,16 @@
+#------------------
+# Entry
+#------------------
+<key> = {
+	location = <key>                # The location where the holy site is
+	type = <key>                    # The type of holy site (see holy_site_types)
+	importance = <integer>          # How significant this site is to the religion (1-5)
+    
+	religions = {
+        <religion keys>
+    } 
+    # List of religions the site is considered holy to.
+    
+	god = <key>                     # Optional. The god that is associated with this holy site.
+	avatar = <key>                  # Optional. The avatar that is associated with this holy site.
+}

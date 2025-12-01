@@ -1,0 +1,11 @@
+#------------------
+# Overview
+#------------------
+
+#------------------
+# Entry
+#------------------
+<key> = {
+    display = <type>        # Optional. Determines how the demand category is displayed.
+                            # Can be: integer, pop
+}

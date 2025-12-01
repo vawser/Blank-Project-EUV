@@ -1,4 +1,6 @@
-# Entry:
+#------------------
+# Entry
+#------------------
 <key> = {
     random = yes                    # Whether this death can happen randomly
     

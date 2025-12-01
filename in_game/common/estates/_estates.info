@@ -1,0 +1,58 @@
+#------------------
+# Entry
+#------------------
+<key> = {
+    color = <color>             # The color this estate is represented by in map modes
+    
+    power_per_pop = <value>     # Estate power growth per pop
+    tax_per_pop = <value>       # Estate taxation growth per pop
+    
+    rival = <value>             # ?
+    alliance = <value>          # ?
+    
+    revolt_court_language = <type>          # The court language if this estate revolts
+                                            # Can be: court_language/liturgical_language/common_language
+    
+    characters_have_dynasty = <type>        # Whether characters from this estate have a dynasty     
+                                            # Can be: always/sometimes/never
+    priority_for_dynasty_head = <bool>      # When calculating a new dynasty head, the dynasty will check characters of this estate first before falling back to the other estates.
+    
+    can_spawn_random_characters = <bool>    # If yes, this estate can spawn random characters.
+    can_generate_mercenary_leaders = <bool> # If yes, this estate can generate mercenary leader characters.
+
+    use_diminutive = <bool>                 # If yes, characters from this estate have diminutive name
+
+    ruler = yes                             # Whether this estate represents the Crown.
+    bank = yes                              # Whether this estate can grant loans.
+    
+    satisfaction = {
+        <modifier> = <float>    # A modifier that affects the satisfcation of this estate
+    }
+    # Multiplied with (satisfaction - LOW_SATISFACTION_THRESHOLD)
+    
+    high_power = {
+        <modifier> = <float>    # A modifier given when this estate is at 'high power'
+    }
+    # Multiplied with (relative_power - LOW_POWER_THRESHOLD) if > LOW_POWER_THRESHOLD
+    
+    low_power = {
+        <modifier> = <float>    # A modifier given when this estate is at 'low power'
+    }
+    # Multiplied with -(relative_power - LOW_POWER_THRESHOLD) if < LOW_POWER_THRESHOLD
+    
+    power = {
+        <modifier> = <float>    # A modifier given when this estate is not in 'high' or 'low' power.
+    }
+    
+    opinion = {
+        <effects>
+        
+        # Example: typically add effect is used
+        add = {
+            desc = "LOC_DESC"
+            value = "opinion(scope:target)"
+			multiply = 0.05
+        }
+    }
+    # Determines the opinion value this estate has. Effect scope, but typically only uses flow control + the add scope to create the value calculations
+}

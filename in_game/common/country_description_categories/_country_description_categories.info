@@ -1,9 +1,16 @@
-﻿Empty objects only used to set country profile descriptions in lobby
+﻿#------------------
+# Overview
+#------------------
+Empty objects only used to set country profile descriptions in lobby
 These categories can be used in the country definition in game/in_game/setup/countries
 
-# Entry:
+#------------------
+# Entry
+#------------------
 <key> = { }
 
-# Localization:
+#------------------
+# Localization
+#------------------
 country_description_category_name_<key>
 country_description_category_desc_<key>

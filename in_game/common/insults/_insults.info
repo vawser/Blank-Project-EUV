@@ -1,0 +1,9 @@
+#------------------
+# Entry
+#------------------
+<key> = {
+    trigger = {
+        <triggers>
+    }
+    # Whether this insult can be used
+}

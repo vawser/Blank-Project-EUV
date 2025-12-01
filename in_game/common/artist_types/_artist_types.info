@@ -1,5 +1,9 @@
-﻿<artist type id> = {
+﻿#------------------
+# Entry
+#------------------
+<key> = {
 	potential = { 
-        <country triggers>
+        <triggers>
     }
+    # Set to the country scope
 }

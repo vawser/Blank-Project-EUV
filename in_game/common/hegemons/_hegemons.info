@@ -1,0 +1,24 @@
+#------------------
+# Overview
+#------------------
+
+#------------------
+# Entry
+#------------------
+<key> = {
+
+    gain = {
+        <triggers>
+    }
+    # The criteria for a country to gain this hegemon.
+
+    lose = {
+        <triggers>
+    }
+    # The criteria for a country to lose this hegemon.
+    
+    modifier = {
+        <modifiers>
+    }
+    # The modifiers applied to a country with this hegemon.
+}

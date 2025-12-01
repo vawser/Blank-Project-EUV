@@ -1,4 +1,6 @@
-# Bias entry
+#------------------
+# Entry
+#------------------
 <key> = {
     value = <value>             # The bias value that is applied.
 	max =  <value>              # The maximum bias value that can be applied if this bias is applied multiple times.

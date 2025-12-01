@@ -1,0 +1,29 @@
+#------------------
+# Overview
+#------------------
+The base government types that reforms are associated with.
+
+#------------------
+# Entry
+#------------------
+<key> = {
+    heir_selection = <type>     # The type of heir selection this government types supports. Multiple can be defined.
+    
+    map_color = <color>         # The map color this government type uses in map modes
+    
+    government_power = <type>   # The government power this government type uses.
+                                # Can be: legitimacy / republican_tradition / devotion / horde_unity / tribal_cohesion
+                                
+                                
+    revolutionary_country_antagonism = <value>          # Antagonism a revolutionary country has towards this government type.
+    
+    default_character_estate = <key>                    # The estate that characters for this government type are automatically associated with.
+    
+    use_regnal_number = yes     # Whether this government type uses regnal numbering.
+	generate_consorts = yes     # Whether this government type generates consort characters.
+    
+    modifier = {
+        <modifiers>
+    }
+    # Modifiers to apply to the country that has this government type.
+}
