@@ -2,7 +2,7 @@
 	"name":	"Blank Project",
 	"id":	"blank.project.euv",
 	"version":	"1.0.0",
-	"supported_game_version":	"1.0.4",
+	"supported_game_version":	"1.0.8",
 	"short_description":	"Blank",
 	"tags":	["Alternative history"],
 	"relationships":	[],
@@ -43,7 +43,7 @@
  			"common/formable_countries",
  			"common/generic_action_ai_lists",
  			"common/generic_actions",
- 			"common/genes",
+            
  			"common/gods",
  			"common/goods",
  			"common/goods_demand",
