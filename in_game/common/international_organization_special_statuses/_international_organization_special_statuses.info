@@ -1,4 +1,11 @@
-﻿<tag> = {
+#------------------
+# Overview
+#------------------
+
+#------------------
+# Entry
+#------------------
+<tag> = {
 	priority = int; which special status is more important for gui lists; higher is better; default 1; 0 makes it equal to regular membership
 	can_bestow_trigger = trigger to test if a country can have this status (root = country, scope:recipient = organization, scope:source = special status)
 	auto_bestowal_trigger = trigger to test if a country should automatically gain this status (root = country, scope:recipient = organization, scope:source = special status)

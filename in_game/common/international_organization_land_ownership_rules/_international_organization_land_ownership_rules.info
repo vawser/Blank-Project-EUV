@@ -1,0 +1,51 @@
+﻿#------------------
+# Overview
+#------------------
+If your international organization can own land too, then we enter the rules here. The land will still be owned by countries, but extra stuff will apply.
+
+#------------------
+# Entry
+#------------------
+<key> = {
+	modifier = {
+        <modifiers>
+    }
+    # Spplied to locations that are owned by the international organization
+    
+	can_add_trigger = {
+        <triggers>
+    }
+    # Can we add locations to the organization in general (root = international organization)
+    
+	can_remove_trigger: = {
+        <triggers>
+    }
+    # Can we remove locations from an organization in general (root = international organization)
+    
+	can_add_location_trigger = {
+        <triggers>
+    }
+    # Can we add a location to the organization (root = location, recipient = international organization)
+    
+	can_remove_location_trigger = {
+        <triggers>
+    }
+    # Can we remove a location from an organization (root = location, recipient = international organization)
+    
+	on_added = {
+        <effects>
+    }
+    # Effect when a location is added to the orgnaisation (root = location, recipient = international organization)
+    
+	on_removed = {
+        <effects>
+    }
+    # Effect when a location is removed from the orgnaisation (root = location, recipient = international organization)
+    
+	ai_desire_to_add = {
+        <effects>
+    }
+    # How much the actual country owner of the land wants to add it to the organization (root = location, recipient = international organization)
+    
+	owned_location_color = <color>          # Optional: color of owned locations on the diplomatic map (will be stripes)
+}
